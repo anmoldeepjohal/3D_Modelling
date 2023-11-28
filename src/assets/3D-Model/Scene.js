@@ -32,7 +32,7 @@ export function Model({ ...props }) {
       .to(camera.position, { z: 6, x: -1 })
       .to(scene.rotation, { z: 0, y: 6.3 })
       .to(camera.position, { x: 0.8, y: 0 });
-  }, []);
+  }, [camera.position,scene.rotation]);
 
   return (
     <group ref={group} {...props} dispose={null}>
