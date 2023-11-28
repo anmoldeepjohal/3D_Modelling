@@ -2,7 +2,6 @@ import gsap from "gsap";
 import React, { useRef, useLayoutEffect } from "react";
 import { useGLTF } from "@react-three/drei";
 import { useThree } from "@react-three/fiber";
-import ScrollTrigger from "gsap/ScrollTrigger";
 
 export function Model({ ...props }) {
   const group = useRef();
