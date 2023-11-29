@@ -75,7 +75,7 @@ const {materials} = useGLTF("/scene.gltf")
       },
     });
 
-    let t2 = gsap
+    gsap
       .timeline({
         scrollTrigger: {
           trigger: Elem,
@@ -122,7 +122,7 @@ const {materials} = useGLTF("/scene.gltf")
       });
 
     return () => {};
-  }, []);
+  }, [materials.Body.color]);
 
   return (
     <Section ref={sectionRef}>
